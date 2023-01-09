@@ -1,12 +1,6 @@
 <template>
-  <div id="app">
-    <div class="left">
-      <el-button @click="addDiv">盒子</el-button>
-    </div>
-    <div class="right">
-        <div-form :id="id"   :cls="cls"></div-form>
-    </div>
-    <div id="oo"></div>
+  <div>
+    <span>I have change all file for the first change</span>
   </div>
 </template>
 
@@ -70,7 +64,7 @@ export default {
       $('#'+self.parentId).append('<div id="'+id+'" class="'+temp+'"></div>')
       self.cls = self.domDict[type];
       self.id = id;
-      
+
     },
     guid() {
       return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
@@ -91,7 +85,7 @@ export default {
 }
 .width_200px{
   width: 200px;
- 
+
 }
 .height_100px{
   height: 100px;
@@ -107,7 +101,7 @@ body{
 }
 input,textarea,select{
     font-size:12px;
-    font-size:100%;    
+    font-size:100%;
     font-family:arial;
     font-family:inherit;
 }
@@ -118,7 +112,7 @@ h4,h5,h6{
     font-size:1em;
 }
 ul,ol{
-    padding-left:0; 
+    padding-left:0;
     list-style-type:none;
 }
 a img{border:0;}
@@ -127,7 +121,7 @@ img{border:0;}
 html, body{
     height: 100%;
     overflow: hidden;
-    
+
 }
 
 .left{
